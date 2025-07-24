@@ -24,14 +24,13 @@ const Head = ({ metadata }) => (
     htmlAttributes={{
       lang: 'en',
       prefix: 'og: http://ogp.me/ns#',
-    }}
-  >
+    }}>
     <title itemProp="name" lang="en">
       {metadata.title}
     </title>
 
     <link rel="shortcut icon" href={favicon} />
-    <link rel="canonical" href="http://yashitanamdeo.github.io/" />
+    <link rel="canonical" href="https://sekharsunkaraportfolio.netlify.app/" />
 
     {/* Meta tags */}
     <meta name="description" content={metadata.description} />

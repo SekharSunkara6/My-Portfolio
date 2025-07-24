@@ -6,7 +6,7 @@ module.exports = {
     'Sekhar Sunkara is an incoming Software Developer, based in India, who loves learning new things and helping tech beginners.',
   siteKeywords:
     'Sekhar Sunkara, Sekhar, Sunkara, SekharSunkara, software engineer, web developer, javascript, python, java, BVCEC, Odalarevu',
-  siteUrl: 'https://yashitanamdeo.github.io/',
+  siteUrl: 'https://sekharsunkaraportfolio.netlify.app/',
   siteLanguage: 'en_US',
   googleAnalyticsID: 'UA-45666519-2',
   googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
