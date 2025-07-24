@@ -1,4 +1,3 @@
-```markdown
 # My Portfolio Website
 
 A personal portfolio website built with Gatsby.js showcasing my projects, skills, and contact information.
@@ -120,4 +119,3 @@ GitHub: [https://github.com/SekharSunkara6](https://github.com/SekharSunkara6)
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
