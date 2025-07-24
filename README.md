@@ -4,106 +4,103 @@ A personal portfolio website built with Gatsby.js showcasing my projects, skills
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Scripts](#scripts)
-- [Deployment](#deployment)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [Credits](#credits)
-- [Contact](#contact)
-- [License](#license)
+- [Project Overview](#project-overview)  
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Getting Started](#getting-started)  
+- [Scripts](#scripts)  
+- [Deployment](#deployment)  
+- [Project Structure](#project-structure)  
+- [Contributing](#contributing)  
+- [Credits](#credits)  
+- [Contact](#contact)  
+- [License](#license)  
 
 ## Project Overview
 
-This is a responsive personal portfolio website built using Gatsby v2, React, and styled-components. The site highlights my projects, skills, and contact details, optimized for both performance and SEO. It is deployed on Netlify for reliable hosting with continuous deployment.
+This is a responsive, SEO-friendly portfolio website built using Gatsby v2, React, and styled-components. It showcases my projects, skills, and contact details, and is deployed on Netlify for fast, reliable hosting with continuous integration.
 
 ## Features
 
-- Fast static site generation with Gatsby v2
-- Responsive design using styled-components
-- SEO optimized with React Helmet
-- Image optimizations using Gatsby plugins (`gatsby-image`, `gatsby-plugin-sharp`)
-- Prettier & ESLint for code quality and formatting
-- Husky pre-commit hooks for consistent code standards
-- Continuous deployment on Netlify from GitHub
+- High-performance static site generation with Gatsby v2  
+- Responsive design with styled-components  
+- SEO optimization using React Helmet  
+- Image processing and optimization with Gatsby plugins (`gatsby-image`, `gatsby-plugin-sharp`)  
+- Code formatting and linting with Prettier and ESLint  
+- Husky pre-commit hooks for consistent code quality  
+- Continuous deployment triggered from GitHub commits on the main branch  
 
 ## Tech Stack
 
-- Node.js (v18+)
-- Gatsby.js (v2)
-- React.js
-- styled-components
-- Prettier & ESLint
-- Husky & lint-staged
-- Netlify (deployment)
-- Git & GitHub (version control)
+- Node.js (v18+)  
+- Gatsby.js (v2)  
+- React.js  
+- styled-components  
+- Prettier & ESLint  
+- Husky & lint-staged  
+- Netlify (hosting and CI/CD)  
+- Git & GitHub (version control)  
 
 ## Getting Started
 
-### 1. Clone the repository
+### 1. Clone the repository:
 
-```
+```bash
 git clone https://github.com/SekharSunkara6/My-Portfolio.git
 cd My-Portfolio
 ```
 
-### 2. Install dependencies
+### 2. Install dependencies:
 
-```
+```bash
 npm install
 ```
 
-(or use `yarn install` if you prefer Yarn)
+*(or use `yarn install` if preferred)*
 
-### 3. Start the development server
+### 3. Start the development server:
 
-```
+```bash
 npm run develop
 ```
 
-The site will be available at [http://localhost:8000](http://localhost:8000).
+Open your browser and visit [http://localhost:8000](http://localhost:8000) to view the site locally.
 
 ## Scripts
 
-| Command           | Description                       |
-|-------------------|---------------------------------|
-| `npm run develop` | Start the development server     |
-| `npm run build`   | Build the production-ready files |
-| `npm run serve`   | Serve the production build locally |
-| `npm run clean`   | Clear Gatsby cache               |
+| Command           | Description                         |
+| ----------------- | --------------------------------- |
+| `npm run develop` | Starts the development server      |
+| `npm run build`   | Builds optimized production files  |
+| `npm run serve`   | Serves production build locally    |
+| `npm run clean`   | Clears Gatsby cache and build files|
 
 ## Deployment
 
-The portfolio website is deployed on Netlify for fast and reliable hosting.
+This project is deployed on Netlify with automatic builds triggered on pushes to the `main` branch.
 
-- **Production URL:**  
-  *(Replace with your actual deployed URL)*  
-  `https://your-netlify-site.netlify.app/`
+- **Production URL:** *(replace with your live site URL)*  
+  `https://sekharsunkaraportfolio.netlify.app/`
 
-- **Automatic Deploys:**  
-  Deploys automatically on push to the `main` branch on GitHub.
-
-- **Manual Deployment:**  
-  Push code to GitHub and trigger deploy on Netlify dashboard (optionally clear cache for fresh builds).
+- To manually deploy:  
+  1. Push changes to GitHub.  
+  2. Trigger deploy via Netlify dashboard (optionally deploy without cache for fresh builds).
 
 ## Project Structure
 
 ```
 src/                # Source files (components, pages, styles)
 public/             # Built static files (auto-generated)
-gatsby-config.js    # Gatsby configuration
+gatsby-config.js    # Gatsby configuration file
 package.json        # Project metadata and dependencies
 ```
 
 ## Contributing
 
-Contributions are welcome! Please fork the repository and submit pull requests with improvements.
+Contributions are welcome! Please fork this repository and submit pull requests.
 
-- Ensure that all linting and formatting rules pass before committing.
-- Keep commit messages clear and descriptive.
+- Ensure code passes linting and formatting before committing.  
+- Write clear, descriptive commit messages.
 
 ## Credits
 
