@@ -11,6 +11,7 @@ import styled from 'styled-components';
 import { theme, mixins, media } from '@styles';
 const { colors, fontSizes, fonts, loaderDelay } = theme;
 
+// ---- styled-components BEGIN ----
 const StyledContainer = styled.header`
   ${mixins.flexBetween};
   position: fixed;
@@ -158,16 +159,20 @@ const StyledResumeButton = styled.a`
   margin-left: 10px;
   font-size: ${fontSizes.smish};
 `;
+// ---- styled-components END ----
 
 const DELTA = 5;
 
 class Nav extends Component {
-  state = {
-    isMounted: !this.props.isHome,
-    menuOpen: false,
-    scrollDirection: 'none',
-    lastScrollTop: 0,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      isMounted: !props.isHome,
+      menuOpen: false,
+      scrollDirection: 'none',
+      lastScrollTop: 0,
+    };
+  }
 
   componentDidMount() {
     setTimeout(
@@ -193,7 +198,6 @@ class Nav extends Component {
     const { isMounted, menuOpen, scrollDirection, lastScrollTop } = this.state;
     const fromTop = window.scrollY;
 
-    // Make sure they scroll more than DELTA
     if (!isMounted || Math.abs(lastScrollTop - fromTop) <= DELTA || menuOpen) {
       return;
     }
@@ -223,7 +227,6 @@ class Nav extends Component {
     if (!this.state.menuOpen) {
       return;
     }
-
     if (e.which === 27 || e.key === 'Escape') {
       this.toggleMenu();
     }
@@ -245,7 +248,7 @@ class Nav extends Component {
           <TransitionGroup component={null}>
             {isMounted && (
               <CSSTransition classNames={fadeClass} timeout={timeout}>
-                <StyledLogo tabindex="-1">
+                <StyledLogo tabIndex="-1">
                   {isHome ? (
                     <a href="/" aria-label="home">
                       <IconLogo />
@@ -281,7 +284,8 @@ class Nav extends Component {
                     <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
                       <StyledListItem
                         key={i}
-                        style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
+                        style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}
+                      >
                         <StyledListLink to={url}>{name}</StyledListLink>
                       </StyledListItem>
                     </CSSTransition>
@@ -296,7 +300,8 @@ class Nav extends Component {
                     <StyledResumeButton
                       href="/resume.pdf"
                       target="_blank"
-                      rel="nofollow noopener noreferrer">
+                      rel="nofollow noopener noreferrer"
+                    >
                       Resume
                     </StyledResumeButton>
                   </div>

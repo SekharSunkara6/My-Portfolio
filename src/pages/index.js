@@ -29,6 +29,7 @@ IndexPage.propTypes = {
 
 export default IndexPage;
 
+// --- Corrected GraphQL query below ---
 export const pageQuery = graphql`
   {
     hero: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/hero/" } }) {
@@ -64,7 +65,7 @@ export const pageQuery = graphql`
     }
     jobs: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/jobs/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___sortOrder], order: ASC }
     ) {
       edges {
         node {
@@ -87,13 +88,7 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
-            cover {
-              childImageSharp {
-                fluid(maxWidth: 700, quality: 90, traceSVG: { color: "#64ffda" }) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
-              }
-            }
+            cover
             tech
             github
             external

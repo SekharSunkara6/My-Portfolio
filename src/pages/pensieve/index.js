@@ -123,7 +123,7 @@ const PensievePage = ({ location, data }) => {
   return (
     <Layout location={location}>
       <Helmet>
-        <title>Pensieve | Yashita Namdeo</title>
+        <title>Pensieve | Sekhar Sunkara</title>
         <link rel="canonical" href="https://github.com/yashitanamdeo/pensieve" />
       </Helmet>
 
@@ -134,7 +134,8 @@ const PensievePage = ({ location, data }) => {
             <a
               href="https://www.wizardingworld.com/writing-by-jk-rowling/pensieve"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               a collection of memories
             </a>
           </p>

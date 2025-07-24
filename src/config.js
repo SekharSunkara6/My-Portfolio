@@ -1,38 +1,40 @@
+// src/config.js
+
 module.exports = {
-  siteTitle: 'Yashita Namdeo',
+  siteTitle: 'Sekhar Sunkara',
   siteDescription:
-    'Yashita Namdeo is an incoming Software Developer, based in India, who loves learning new things and helping tech beginners.',
+    'Sekhar Sunkara is an incoming Software Developer, based in India, who loves learning new things and helping tech beginners.',
   siteKeywords:
-    'Yashita Namdeo, Yashita, Namdeo, yashitanamdeo, software engineer, web developer, javascript, python, java, svvv, indore',
+    'Sekhar Sunkara, Sekhar, Sunkara, SekharSunkara, software engineer, web developer, javascript, python, java, BVCEC, Odalarevu',
   siteUrl: 'https://yashitanamdeo.github.io/',
   siteLanguage: 'en_US',
   googleAnalyticsID: 'UA-45666519-2',
   googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
-  name: 'Yashita Namdeo',
+  name: 'Sekhar Sunkara',
   location: 'Indore, India',
-  email: 'yashita.namdeo2000@gmail.com',
-  github: 'https://github.com/yashitanamdeo',
-  twitterHandle: '@',
+  email: 'sekharsunkara2002@gmail.com',
+  github: 'https://github.com/SekharSunkara6',
+  RenderHandle: '@',
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/yashitanamdeo',
+      url: 'https://github.com/SekharSunkara6',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/yashitanamdeo/',
+      url: 'https://www.linkedin.com/in/sekhar-sunkara-1b869b1a8',
     },
     {
-      name: 'Codepen',
-      url: 'https://codepen.io/yashitanamdeo',
+      name: 'Vercel',
+      url: 'https://vercel.com/sunkara-purnasekhars-projects',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/yashitanamdeo',
+      url: 'https://www.instagram.com/sekhar__sunkara/',
     },
     {
-      name: 'Twitter',
-      url: 'https://twitter.com/',
+      name: 'IconRender',
+      url: 'https://dashboard.render.com/',
     },
   ],
 

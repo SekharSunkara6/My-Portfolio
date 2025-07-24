@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
 import sr from '@utils/sr';
 import { srConfig } from '@config';
 import { FormattedIcon } from '@components/icons';
@@ -106,7 +105,7 @@ const StyledLinkWrapper = styled.div`
     }
   }
 `;
-const StyledFeaturedImg = styled(Img)`
+const StyledPlainImg = styled.img`
   width: 100%;
   max-width: 100%;
   vertical-align: middle;
@@ -139,7 +138,7 @@ const StyledImgContainer = styled.a`
   &:focus {
     background: transparent;
     &:before,
-    ${StyledFeaturedImg} {
+    ${StyledPlainImg} {
       background: transparent;
       filter: none;
     }
@@ -217,7 +216,6 @@ const Featured = ({ data }) => {
   return (
     <StyledContainer id="projects">
       <Heading ref={revealTitle}>Some Things I&apos;ve Built</Heading>
-
       <div>
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
@@ -234,7 +232,8 @@ const Featured = ({ data }) => {
                         href={external}
                         target="_blank"
                         rel="nofollow noopener noreferrer"
-                        aria-label="External Link">
+                        aria-label="External Link"
+                      >
                         {title}
                       </a>
                     ) : (
@@ -255,7 +254,8 @@ const Featured = ({ data }) => {
                         href={github}
                         target="_blank"
                         rel="nofollow noopener noreferrer"
-                        aria-label="GitHub Link">
+                        aria-label="GitHub Link"
+                      >
                         <FormattedIcon name="GitHub" />
                       </a>
                     )}
@@ -264,7 +264,8 @@ const Featured = ({ data }) => {
                         href={external}
                         target="_blank"
                         rel="nofollow noopener noreferrer"
-                        aria-label="External Link">
+                        aria-label="External Link"
+                      >
                         <FormattedIcon name="External" />
                       </a>
                     )}
@@ -274,8 +275,9 @@ const Featured = ({ data }) => {
                 <StyledImgContainer
                   href={external ? external : github ? github : '#'}
                   target="_blank"
-                  rel="nofollow noopener noreferrer">
-                  <StyledFeaturedImg fluid={cover.childImageSharp.fluid} alt={title} />
+                  rel="nofollow noopener noreferrer"
+                >
+                  {cover && <StyledPlainImg src={cover} alt={title} />}
                 </StyledImgContainer>
               </StyledProject>
             );

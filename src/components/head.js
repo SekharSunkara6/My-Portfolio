@@ -20,17 +20,25 @@ import favicon16x16 from '@images/favicons/favicon-16x16.png';
 import msIcon144x144 from '@images/favicons/ms-icon-144x144.png';
 
 const Head = ({ metadata }) => (
-  <Helmet>
-    <html lang="en" prefix="og: http://ogp.me/ns#" />
+  <Helmet
+    htmlAttributes={{
+      lang: 'en',
+      prefix: 'og: http://ogp.me/ns#',
+    }}
+  >
     <title itemProp="name" lang="en">
       {metadata.title}
     </title>
-    <link rel="shortcut icon" href={favicon} />
-    <link rel="canonical" href="https://brittanychiang.com" />
 
+    <link rel="shortcut icon" href={favicon} />
+    <link rel="canonical" href="http://yashitanamdeo.github.io/" />
+
+    {/* Meta tags */}
     <meta name="description" content={metadata.description} />
     <meta name="keywords" content={config.siteKeywords} />
     <meta name="google-site-verification" content={config.googleVerification} />
+
+    {/* Open Graph */}
     <meta property="og:title" content={metadata.title} />
     <meta property="og:description" content={metadata.description} />
     <meta property="og:type" content="website" />
@@ -41,18 +49,23 @@ const Head = ({ metadata }) => (
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:locale" content={config.siteLanguage} />
+
+    {/* Schema.org */}
     <meta itemProp="name" content={metadata.title} />
     <meta itemProp="description" content={metadata.description} />
     <meta itemProp="image" content={`${config.siteUrl}${ogImage}`} />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content={metadata.siteUrl} />
-    <meta name="twitter:site" content={config.twitterHandle} />
-    <meta name="twitter:creator" content={config.twitterHandle} />
-    <meta name="twitter:title" content={metadata.title} />
-    <meta name="twitter:description" content={metadata.description} />
-    <meta name="twitter:image" content={`${config.siteUrl}${ogImage}`} />
-    <meta name="twitter:image:alt" content={metadata.title} />
 
+    {/* Render Meta */}
+    <meta name="Render:card" content="summary_large_image" />
+    <meta name="Render:url" content={metadata.siteUrl} />
+    <meta name="Render:site" content={config.RenderHandle} />
+    <meta name="Render:creator" content={config.RenderHandle} />
+    <meta name="Render:title" content={metadata.title} />
+    <meta name="Render:description" content={metadata.description} />
+    <meta name="Render:image" content={`${config.siteUrl}${ogImage}`} />
+    <meta name="Render:image:alt" content={metadata.title} />
+
+    {/* Favicons & Icons */}
     <link rel="apple-touch-icon" sizes="57x57" href={appleIcon57x57} />
     <link rel="apple-touch-icon" sizes="60x60" href={appleIcon60x60} />
     <link rel="apple-touch-icon" sizes="72x72" href={appleIcon72x72} />
@@ -66,14 +79,16 @@ const Head = ({ metadata }) => (
     <link rel="icon" type="image/png" sizes="32x32" href={favicon32x32} />
     <link rel="icon" type="image/png" sizes="96x96" href={favicon96x96} />
     <link rel="icon" type="image/png" sizes="16x16" href={favicon16x16} />
+
+    {/* Microsoft Tiles */}
     <meta name="msapplication-TileColor" content={config.colors.navy} />
     <meta name="msapplication-TileImage" content={msIcon144x144} />
     <meta name="theme-color" content={config.colors.navy} />
   </Helmet>
 );
 
-export default Head;
-
 Head.propTypes = {
   metadata: PropTypes.object.isRequired,
 };
+
+export default Head;
