@@ -1,74 +1,117 @@
-<div align="center">
-  <img alt="Logo" src="https://github.com/yashitanamdeo/yashitanamdeo.github.io/blob/source/src/images/logo.png" width="100" />
-</div>
-<h1 align="center">
-  Portfolio Website Version 1
-</h1>
-<p align="center">
-  The first iteration of <a href="https://yashitanamdeo.github.io/" target="_blank">Yashita Namdeo's</a> portfolio built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://pages.github.com/" target="_blank">Github Pages</a>
-</p>
-<!-- <p align="center">
-  Previous iterations:
-  <a href="https://github.com/chandrikadeb7/chandrikadeb7.github.io-v1" target="_blank">Version 1</a>
-</p> -->
+```markdown
+# My Portfolio Website
 
-<div align="center">
-  <img alt="Demo" src="https://github.com/yashitanamdeo/yashitanamdeo.github.io/blob/source/src/images/demo.png" />
-</div>
+A personal portfolio website built with Gatsby.js showcasing my projects, skills, and contact information.
 
-### TL;DR
+---
 
-Yes, you can fork this repo. Please give proper credit by linking back to [brittanychiang.com](https://brittanychiang.com). Thanks!
+## Features
 
-## 🛠 Installation & Set Up
+- Built with Gatsby v2 for fast static site generation.
+- Responsive design using styled-components.
+- SEO friendly with React Helmet.
+- Image optimization with Gatsby plugins.
+- Continuous deployment on Netlify.
+- Prettier & ESLint for code formatting and linting.
+- Husky pre-commit hooks for consistent code quality.
 
-1. Install the Gatsby CLI
+---
 
-   ```sh
-   npm install -g gatsby-cli
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or Yarn
+- Git
+
+### Installation
+
+1. Clone this repository:
+
+   ```
+   git clone https://github.com/YourUsername/YourRepo.git
+   cd YourRepo
    ```
 
-2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+2. Install dependencies:
 
-   ```sh
-   nvm install
+   ```
+   npm install
+   # or
+   yarn install
    ```
 
-3. Install dependencies
+3. Start development server:
 
-   ```sh
-   yarn
+   ```
+   npm run develop
+   # or
+   yarn develop
    ```
 
-4. Start the development server
+4. Open [http://localhost:8000](http://localhost:8000) in your browser.
 
-   ```sh
-   npm start
-   ```
+---
 
-## 🚀 Building and Running for Production
+## Scripts
 
-1. Generate a full static production build
+| Command          | Description                     |
+|------------------|---------------------------------|
+| `npm run develop` | Start local dev server          |
+| `npm run build`   | Build production-ready files    |
+| `npm run serve`   | Serve production build locally  |
+| `npm run clean`   | Remove cache files              |
+| `npm run deploy`  | Build and deploy to GitHub Pages|
 
-   ```sh
-   npm run build
-   ```
+---
 
-1. Preview the site as it will appear once deployed
+## Deployment
 
-   ```sh
-   npm run serve
-   ```
+This project is deployed on Netlify with automatic rebuilds on pushes to the main branch.
 
-## 🎨 Color Reference
+To manually deploy:
 
-| Color          | Hex                                                                |
-| -------------- | ------------------------------------------------------------------ |
-| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
-| Light Navy     | ![#172a45](https://via.placeholder.com/10/0a192f?text=+) `#172a45` |
-| Lightest Navy  | ![#303C55](https://via.placeholder.com/10/303C55?text=+) `#303C55` |
-| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
-| Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
-| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
-| White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+1. Push changes to GitHub.
+2. Trigger deployment from Netlify dashboard.
+
+---
+
+## Project Structure
+
+```
+src/             # Source code (components, pages, styles)
+public/          # Built static files
+gatsby-config.js # Gatsby config file
+package.json     # Project metadata and dependencies
+```
+
+---
+
+## Contributing
+
+Feel free to fork the repo and submit pull requests. Please ensure linting passes before submitting code.
+
+---
+
+## Credits
+
+This portfolio website is inspired by and forked from [brittanychiang.com](https://brittanychiang.com).  
+Please give proper credit by linking back to [brittanychiang.com](https://brittanychiang.com) if you use or fork this project. Thanks!
+
+---
+
+## Contact
+
+Sekhar Sunkara  
+Email: sekharsunkara2002@gmail.com  
+GitHub: [https://github.com/SekharSunkara6](https://github.com/SekharSunkara6)
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
+
+If you want me to customize it further with your actual GitHub repo URL or Netlify URL, just let me know!
